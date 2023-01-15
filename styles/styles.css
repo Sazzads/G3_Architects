@@ -313,8 +313,8 @@
 }
 
 .some-fact-box:hover {
-    transform: scale(1.1) rotate(180deg);
-    transform-style: preserve-3d;
+    transform: scale(1.1) rotate(360deg);
+    transition: .5s ease-in;
 
 }
 
@@ -367,10 +367,22 @@
     margin-bottom: 30px;
 }
 .our-sponsors-logos{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    gap: 50px;
     
 
+}
+.our-sponsor-logo img{
+    filter: invert(0%) grayscale(1);
+}
+.our-sponsor-logo>img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: none;
+    transition: .5s ease-in;
+    cursor: pointer;
 }
 /* our sponsors end */
 /* responsive for mobile........
@@ -442,5 +454,12 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+    }
+    .our-sponsors-containt{
+        padding: 0 20px;
+    }
+    .our-sponsors-logos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 }
