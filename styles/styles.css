@@ -422,6 +422,17 @@ footer h4 {
 .........................start  */
 @media screen and (max-width:767px) {
 
+    .nav-title,
+    .header-containt h2,
+    .features-containt-section h3,
+    .love-enjoy-title h3,
+    .some-facts-containt h3,
+    .our-sponsors-containt h3 {
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
     .nav-bar,
     .nav-link-bar ul {
         flex-direction: column;
