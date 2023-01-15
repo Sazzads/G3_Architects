@@ -234,7 +234,145 @@
 }
 
 /* love and enjoy section end */
+/* some facts section start */
+.some-facts {
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
 
+.some-facts-containts {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.some-facts-containt {
+    padding: 50px;
+}
+
+.some-facts-containt h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.some-facts-containt p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+
+}
+
+.some-facts-containt-dummy {
+    width: 00px;
+}
+
+.some-facts-boxs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 136px;
+    justify-items: center;
+    padding: 0 20%;
+}
+
+.some-fact-box {
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px 16px 39px 14px;
+    animation-name: example;
+    animation-duration: 20s;
+
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+.some-fact-box:hover {
+    transform: scale(1.1) rotate(180deg);
+    transform-style: preserve-3d;
+
+}
+
+.some-fact-box img {
+    width: 45.22px;
+    height: 45.22px;
+}
+
+.some-fact-box h2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #424242;
+
+}
+
+.some-fact-box p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+/* some facts section end */
+
+/* our sponsors start  */
+.our-sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-sponsors-containt{
+    text-align: center;
+}
+.our-sponsors-containt h3{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 30px;
+
+}
+.our-sponsors-containt p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 30px;
+}
+.our-sponsors-logos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+
+}
+/* our sponsors end */
 /* responsive for mobile........
 ..............................
 .........................start  */
@@ -298,5 +436,11 @@
     .love-enjoy-right-part {
         position: relative;
         left: 0px;
+    }
+
+    .some-facts-boxs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
 }
