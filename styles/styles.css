@@ -50,6 +50,12 @@
     color: #424242;
 }
 
+.nav-link-bar ul li a:hover {
+    color: #FF900E;
+    font-weight: 700px;
+    font-size: 20px;
+}
+
 /* nav style-end  */
 
 /* header style start  */
@@ -458,6 +464,10 @@ footer h4 {
 
     .love-enjoy-left-part {
         align-items: center;
+    }
+
+    .love-enjoy-containt {
+        padding: 20px;
     }
 
     .love-enjoy-right-part img {
