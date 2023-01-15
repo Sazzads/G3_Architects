@@ -346,6 +346,66 @@
 }
 
 /* some facts section end */
+/* extra section start  */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF4E7;
+    justify-content: space-around;
+    background-color: rgba(255, 144, 14, 0.1);
+    margin-bottom: 50px;
+    padding: 50px 0;
+    margin: 100px 20% 100px 20%;
+}
+
+.contact-containt {
+    text-align: center;
+}
+
+.contact-containt h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #424242;
+}
+
+.contact-containt p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+
+.contact-form form input[type="text"] {
+    width: 275px;
+    height: 48px;
+    background: #D9D9D9;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    border: none;
+}
+
+.contact-form form input[type="submit"] {
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* extra section end */
 
 /* our sponsors start  */
 .our-sponsors {
@@ -427,7 +487,8 @@ footer h4 {
     .features-containt-section h3,
     .love-enjoy-title h3,
     .some-facts-containt h3,
-    .our-sponsors-containt h3 {
+    .our-sponsors-containt h3,
+    ..contact-containt h3 {
         font-size: 30px;
         line-height: 40px;
 
@@ -510,6 +571,13 @@ footer h4 {
     .our-sponsors-logos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
     }
 
 }
